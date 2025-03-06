@@ -1,32 +1,29 @@
-//°üº¬ ±ê×¼ÊäÈëÊä³öÁ÷
+//åŒ…å« æ ‡å‡†è¾“å…¥è¾“å‡ºæµ
 #include <iostream>
 
-//°üº¬ ¶¯Ì¬Êı×éÈİÆ÷
+//åŒ…å« åŠ¨æ€æ•°ç»„å®¹å™¨
 #include <vector>
 
-//°üº¬ Íæ¼Ò
+//åŒ…å« ç©å®¶
 #include "player.h"
 
-//µ¼Èë stdÃüÃû¿Õ¼ä
+//å¯¼å…¥ stdå‘½åç©ºé—´
 using namespace std;
 
-//ÉùÃ÷ Èë¿Ú
-class entrance :public player
+//å£°æ˜ ä¸»ç¨‹åº
+class main_program :public player
 {
-	//ÉùÃ÷ ³õÊ¼»¯£¨£©ÖØĞ´£»
+	//å£°æ˜ åˆå§‹åŒ–ï¼ˆï¼‰é‡å†™ï¼›
 	void initialize()override;
 
 public:
 
-	//ÉùÃ÷ ¹¹Ôì£¨£©£»
-	entrance();
+	//å£°æ˜ æ„é€ ï¼ˆï¼‰ï¼›
+	main_program();
 
-	//ÉùÃ÷ Îö¹¹£¨£©ÖØĞ´£»
-	~entrance()override;
+	//å£°æ˜ ææ„ï¼ˆï¼‰é‡å†™ï¼›
+	~main_program()override;
 
-	//ÉùÃ÷ Ö÷Ñ­»·£¨£©ÖØĞ´£»
+	//å£°æ˜ ä¸»å¾ªç¯ï¼ˆï¼‰é‡å†™ï¼›
 	void main_cycle()override;
 };
-
-//ÉùÃ÷ ³ÌĞòÈë¿Ú
-extern shared_ptr<entrance>program_entrance;

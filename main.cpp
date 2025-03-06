@@ -1,5 +1,11 @@
-//°üº¬ ³ÌĞòÈë¿Ú
-#include "entrance.h"
+//åŒ…å« ä¸»ç¨‹åº
+#include "main_program.h"
 
-//ÖÇÄÜÖ¸Õë·ÃÎÊ¹¹Ôìº¯ÊıÓÃÀ´Ñ¡ÔñÓÎÏ·µÈ£»
-int main() { program_entrance->main_cycle(); return 0; }
+int main()
+{
+	//ç¨‹åºå…¥å£
+	shared_ptr<main_program>program_entrance
+		= make_shared<main_program>();
+	program_entrance->main_cycle();
+	return 0;
+}
